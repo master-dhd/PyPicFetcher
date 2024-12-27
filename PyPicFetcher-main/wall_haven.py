@@ -20,7 +20,7 @@ from urllib.parse import urlparse, parse_qs
 # 配置日志记录
 logging.basicConfig(filename='wallhaven.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# 根据需求，设置代理
+# 根据需求，设置代理，如果不需要代理，可以将proxies设置为None
 proxies = {
     'http': '127.0.0.1:18081',
     'https': '127.0.0.1:18081',
