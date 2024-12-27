@@ -5,6 +5,7 @@
 # 批量并发下载wallhaven图片
 # https://wallhaven.cc/help/api
 # 通过解析url，传参给api接口，获取壁纸详情，下载图片
+# 使用中可能遇到的问的问题：429错误，需要等待一段时间后重试
 
 
 import time
@@ -233,7 +234,7 @@ if __name__ == '__main__':
 
     # 示例 URL，可以修改为实际需求的 URL
     # 如果最后的参数是page，例如有16页，则需要修改为page=16，这样会默认下载1-16页
-    url = 'https://wallhaven.cc/search?q=like%3A5gqdq1&page=3'
+    url = '' # 输入你的url
 
     # 解析 URL 参数
     params = parse_url_params(url)
